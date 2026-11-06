@@ -1,0 +1,1515 @@
+{
+  "model": "K636CLO-RGB",
+  "vendorId": 9610,
+  "productId": 73,
+  "reportId": 8,
+  "reportBytes": 382,
+  "slotCount": 126,
+  "source": "Cfg.ini plus static parser/caller trace; not physically verified",
+  "keys": [
+    {
+      "id": 1,
+      "label": "Esc",
+      "bounds": {
+        "left": 14,
+        "top": 12,
+        "right": 34,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 27,
+      "modifier": 0,
+      "ledSlot": 0,
+      "matrixIndex": 0,
+      "packetOffset": 4
+    },
+    {
+      "id": 2,
+      "label": "F1",
+      "bounds": {
+        "left": 78,
+        "top": 12,
+        "right": 98,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 112,
+      "modifier": 0,
+      "ledSlot": 12,
+      "matrixIndex": 2,
+      "packetOffset": 40
+    },
+    {
+      "id": 3,
+      "label": "F2",
+      "bounds": {
+        "left": 111,
+        "top": 12,
+        "right": 131,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 113,
+      "modifier": 0,
+      "ledSlot": 18,
+      "matrixIndex": 3,
+      "packetOffset": 58
+    },
+    {
+      "id": 4,
+      "label": "F3",
+      "bounds": {
+        "left": 142,
+        "top": 12,
+        "right": 162,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 114,
+      "modifier": 0,
+      "ledSlot": 24,
+      "matrixIndex": 4,
+      "packetOffset": 76
+    },
+    {
+      "id": 5,
+      "label": "F4",
+      "bounds": {
+        "left": 176,
+        "top": 12,
+        "right": 196,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 115,
+      "modifier": 0,
+      "ledSlot": 30,
+      "matrixIndex": 5,
+      "packetOffset": 94
+    },
+    {
+      "id": 6,
+      "label": "F5",
+      "bounds": {
+        "left": 223,
+        "top": 12,
+        "right": 243,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 116,
+      "modifier": 0,
+      "ledSlot": 36,
+      "matrixIndex": 6,
+      "packetOffset": 112
+    },
+    {
+      "id": 7,
+      "label": "F6",
+      "bounds": {
+        "left": 255,
+        "top": 12,
+        "right": 275,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 117,
+      "modifier": 0,
+      "ledSlot": 42,
+      "matrixIndex": 7,
+      "packetOffset": 130
+    },
+    {
+      "id": 8,
+      "label": "F7",
+      "bounds": {
+        "left": 287,
+        "top": 12,
+        "right": 307,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 118,
+      "modifier": 0,
+      "ledSlot": 48,
+      "matrixIndex": 8,
+      "packetOffset": 148
+    },
+    {
+      "id": 9,
+      "label": "F8",
+      "bounds": {
+        "left": 320,
+        "top": 12,
+        "right": 340,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 119,
+      "modifier": 0,
+      "ledSlot": 54,
+      "matrixIndex": 9,
+      "packetOffset": 166
+    },
+    {
+      "id": 10,
+      "label": "F9",
+      "bounds": {
+        "left": 366,
+        "top": 11,
+        "right": 386,
+        "bottom": 33
+      },
+      "type": 2,
+      "virtualKey": 120,
+      "modifier": 0,
+      "ledSlot": 60,
+      "matrixIndex": 10,
+      "packetOffset": 184
+    },
+    {
+      "id": 11,
+      "label": "F10",
+      "bounds": {
+        "left": 399,
+        "top": 11,
+        "right": 419,
+        "bottom": 33
+      },
+      "type": 2,
+      "virtualKey": 121,
+      "modifier": 0,
+      "ledSlot": 66,
+      "matrixIndex": 11,
+      "packetOffset": 202
+    },
+    {
+      "id": 12,
+      "label": "F11",
+      "bounds": {
+        "left": 431,
+        "top": 11,
+        "right": 451,
+        "bottom": 33
+      },
+      "type": 2,
+      "virtualKey": 122,
+      "modifier": 0,
+      "ledSlot": 72,
+      "matrixIndex": 12,
+      "packetOffset": 220
+    },
+    {
+      "id": 13,
+      "label": "F12",
+      "bounds": {
+        "left": 463,
+        "top": 11,
+        "right": 483,
+        "bottom": 33
+      },
+      "type": 2,
+      "virtualKey": 123,
+      "modifier": 0,
+      "ledSlot": 78,
+      "matrixIndex": 13,
+      "packetOffset": 238
+    },
+    {
+      "id": 14,
+      "label": "PrtSc",
+      "bounds": {
+        "left": 495,
+        "top": 11,
+        "right": 515,
+        "bottom": 33
+      },
+      "type": 2,
+      "virtualKey": 44,
+      "modifier": 0,
+      "ledSlot": 84,
+      "matrixIndex": 14,
+      "packetOffset": 256
+    },
+    {
+      "id": 15,
+      "label": "Num-",
+      "bounds": {
+        "left": 527,
+        "top": 11,
+        "right": 547,
+        "bottom": 33
+      },
+      "type": 2,
+      "virtualKey": 109,
+      "modifier": 0,
+      "ledSlot": 90,
+      "matrixIndex": 15,
+      "packetOffset": 274
+    },
+    {
+      "id": 16,
+      "label": "Num+",
+      "bounds": {
+        "left": 559,
+        "top": 12,
+        "right": 579,
+        "bottom": 34
+      },
+      "type": 2,
+      "virtualKey": 107,
+      "modifier": 0,
+      "ledSlot": 96,
+      "matrixIndex": 16,
+      "packetOffset": 292
+    },
+    {
+      "id": 17,
+      "label": "`",
+      "bounds": {
+        "left": 13,
+        "top": 48,
+        "right": 33,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 192,
+      "modifier": 0,
+      "ledSlot": 1,
+      "matrixIndex": 21,
+      "packetOffset": 7
+    },
+    {
+      "id": 18,
+      "label": "1",
+      "bounds": {
+        "left": 46,
+        "top": 48,
+        "right": 66,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 49,
+      "modifier": 0,
+      "ledSlot": 7,
+      "matrixIndex": 22,
+      "packetOffset": 25
+    },
+    {
+      "id": 19,
+      "label": "2",
+      "bounds": {
+        "left": 78,
+        "top": 48,
+        "right": 98,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 50,
+      "modifier": 0,
+      "ledSlot": 13,
+      "matrixIndex": 23,
+      "packetOffset": 43
+    },
+    {
+      "id": 20,
+      "label": "3",
+      "bounds": {
+        "left": 111,
+        "top": 48,
+        "right": 131,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 51,
+      "modifier": 0,
+      "ledSlot": 19,
+      "matrixIndex": 24,
+      "packetOffset": 61
+    },
+    {
+      "id": 21,
+      "label": "4",
+      "bounds": {
+        "left": 143,
+        "top": 48,
+        "right": 163,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 52,
+      "modifier": 0,
+      "ledSlot": 25,
+      "matrixIndex": 25,
+      "packetOffset": 79
+    },
+    {
+      "id": 22,
+      "label": "5",
+      "bounds": {
+        "left": 175,
+        "top": 48,
+        "right": 195,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 53,
+      "modifier": 0,
+      "ledSlot": 31,
+      "matrixIndex": 26,
+      "packetOffset": 97
+    },
+    {
+      "id": 23,
+      "label": "6",
+      "bounds": {
+        "left": 207,
+        "top": 48,
+        "right": 227,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 54,
+      "modifier": 0,
+      "ledSlot": 37,
+      "matrixIndex": 27,
+      "packetOffset": 115
+    },
+    {
+      "id": 24,
+      "label": "7",
+      "bounds": {
+        "left": 239,
+        "top": 48,
+        "right": 259,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 55,
+      "modifier": 0,
+      "ledSlot": 43,
+      "matrixIndex": 28,
+      "packetOffset": 133
+    },
+    {
+      "id": 25,
+      "label": "8",
+      "bounds": {
+        "left": 271,
+        "top": 48,
+        "right": 291,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 56,
+      "modifier": 0,
+      "ledSlot": 49,
+      "matrixIndex": 29,
+      "packetOffset": 151
+    },
+    {
+      "id": 26,
+      "label": "9",
+      "bounds": {
+        "left": 303,
+        "top": 48,
+        "right": 323,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 57,
+      "modifier": 0,
+      "ledSlot": 55,
+      "matrixIndex": 30,
+      "packetOffset": 169
+    },
+    {
+      "id": 27,
+      "label": "0",
+      "bounds": {
+        "left": 335,
+        "top": 48,
+        "right": 355,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 48,
+      "modifier": 0,
+      "ledSlot": 61,
+      "matrixIndex": 31,
+      "packetOffset": 187
+    },
+    {
+      "id": 28,
+      "label": "-",
+      "bounds": {
+        "left": 367,
+        "top": 48,
+        "right": 387,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 189,
+      "modifier": 0,
+      "ledSlot": 67,
+      "matrixIndex": 32,
+      "packetOffset": 205
+    },
+    {
+      "id": 29,
+      "label": "=",
+      "bounds": {
+        "left": 399,
+        "top": 48,
+        "right": 419,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 187,
+      "modifier": 0,
+      "ledSlot": 73,
+      "matrixIndex": 33,
+      "packetOffset": 223
+    },
+    {
+      "id": 30,
+      "label": "Backspace",
+      "bounds": {
+        "left": 431,
+        "top": 48,
+        "right": 478,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 8,
+      "modifier": 0,
+      "ledSlot": 79,
+      "matrixIndex": 34,
+      "packetOffset": 241
+    },
+    {
+      "id": 31,
+      "label": "NumLock",
+      "bounds": {
+        "left": 496,
+        "top": 48,
+        "right": 516,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 144,
+      "modifier": 0,
+      "ledSlot": 85,
+      "matrixIndex": 35,
+      "packetOffset": 259
+    },
+    {
+      "id": 32,
+      "label": "Num /",
+      "bounds": {
+        "left": 528,
+        "top": 48,
+        "right": 548,
+        "bottom": 70
+      },
+      "type": 2,
+      "virtualKey": 111,
+      "modifier": 0,
+      "ledSlot": 91,
+      "matrixIndex": 36,
+      "packetOffset": 277
+    },
+    {
+      "id": 33,
+      "label": "Num*",
+      "bounds": {
+        "left": 560,
+        "top": 49,
+        "right": 580,
+        "bottom": 71
+      },
+      "type": 2,
+      "virtualKey": 106,
+      "modifier": 0,
+      "ledSlot": 97,
+      "matrixIndex": 37,
+      "packetOffset": 295
+    },
+    {
+      "id": 34,
+      "label": "Tab",
+      "bounds": {
+        "left": 13,
+        "top": 80,
+        "right": 51,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 9,
+      "modifier": 0,
+      "ledSlot": 2,
+      "matrixIndex": 42,
+      "packetOffset": 10
+    },
+    {
+      "id": 35,
+      "label": "Q",
+      "bounds": {
+        "left": 62,
+        "top": 80,
+        "right": 82,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 81,
+      "modifier": 0,
+      "ledSlot": 8,
+      "matrixIndex": 43,
+      "packetOffset": 28
+    },
+    {
+      "id": 36,
+      "label": "W",
+      "bounds": {
+        "left": 95,
+        "top": 80,
+        "right": 115,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 87,
+      "modifier": 0,
+      "ledSlot": 14,
+      "matrixIndex": 44,
+      "packetOffset": 46
+    },
+    {
+      "id": 37,
+      "label": "E",
+      "bounds": {
+        "left": 127,
+        "top": 80,
+        "right": 147,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 69,
+      "modifier": 0,
+      "ledSlot": 20,
+      "matrixIndex": 45,
+      "packetOffset": 64
+    },
+    {
+      "id": 38,
+      "label": "R",
+      "bounds": {
+        "left": 159,
+        "top": 80,
+        "right": 179,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 82,
+      "modifier": 0,
+      "ledSlot": 26,
+      "matrixIndex": 46,
+      "packetOffset": 82
+    },
+    {
+      "id": 39,
+      "label": "T",
+      "bounds": {
+        "left": 191,
+        "top": 80,
+        "right": 211,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 84,
+      "modifier": 0,
+      "ledSlot": 32,
+      "matrixIndex": 47,
+      "packetOffset": 100
+    },
+    {
+      "id": 40,
+      "label": "Y",
+      "bounds": {
+        "left": 223,
+        "top": 80,
+        "right": 243,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 89,
+      "modifier": 0,
+      "ledSlot": 38,
+      "matrixIndex": 48,
+      "packetOffset": 118
+    },
+    {
+      "id": 41,
+      "label": "U",
+      "bounds": {
+        "left": 255,
+        "top": 80,
+        "right": 275,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 85,
+      "modifier": 0,
+      "ledSlot": 44,
+      "matrixIndex": 49,
+      "packetOffset": 136
+    },
+    {
+      "id": 42,
+      "label": "I",
+      "bounds": {
+        "left": 287,
+        "top": 80,
+        "right": 307,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 73,
+      "modifier": 0,
+      "ledSlot": 50,
+      "matrixIndex": 50,
+      "packetOffset": 154
+    },
+    {
+      "id": 43,
+      "label": "O",
+      "bounds": {
+        "left": 319,
+        "top": 80,
+        "right": 339,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 79,
+      "modifier": 0,
+      "ledSlot": 56,
+      "matrixIndex": 51,
+      "packetOffset": 172
+    },
+    {
+      "id": 44,
+      "label": "P",
+      "bounds": {
+        "left": 351,
+        "top": 80,
+        "right": 371,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 80,
+      "modifier": 0,
+      "ledSlot": 62,
+      "matrixIndex": 52,
+      "packetOffset": 190
+    },
+    {
+      "id": 45,
+      "label": "[",
+      "bounds": {
+        "left": 383,
+        "top": 80,
+        "right": 403,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 219,
+      "modifier": 0,
+      "ledSlot": 68,
+      "matrixIndex": 53,
+      "packetOffset": 208
+    },
+    {
+      "id": 46,
+      "label": "]",
+      "bounds": {
+        "left": 415,
+        "top": 80,
+        "right": 435,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 221,
+      "modifier": 0,
+      "ledSlot": 74,
+      "matrixIndex": 54,
+      "packetOffset": 226
+    },
+    {
+      "id": 47,
+      "label": "\\",
+      "bounds": {
+        "left": 446,
+        "top": 80,
+        "right": 480,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 220,
+      "modifier": 0,
+      "ledSlot": 80,
+      "matrixIndex": 55,
+      "packetOffset": 244
+    },
+    {
+      "id": 48,
+      "label": "Num7",
+      "bounds": {
+        "left": 495,
+        "top": 79,
+        "right": 515,
+        "bottom": 101
+      },
+      "type": 2,
+      "virtualKey": 103,
+      "modifier": 0,
+      "ledSlot": 86,
+      "matrixIndex": 56,
+      "packetOffset": 262
+    },
+    {
+      "id": 49,
+      "label": "Num8",
+      "bounds": {
+        "left": 527,
+        "top": 80,
+        "right": 547,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 104,
+      "modifier": 0,
+      "ledSlot": 92,
+      "matrixIndex": 57,
+      "packetOffset": 280
+    },
+    {
+      "id": 50,
+      "label": "Num9",
+      "bounds": {
+        "left": 559,
+        "top": 80,
+        "right": 579,
+        "bottom": 102
+      },
+      "type": 2,
+      "virtualKey": 105,
+      "modifier": 0,
+      "ledSlot": 98,
+      "matrixIndex": 58,
+      "packetOffset": 298
+    },
+    {
+      "id": 51,
+      "label": "Num4",
+      "bounds": {
+        "left": 495,
+        "top": 112,
+        "right": 515,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 100,
+      "modifier": 0,
+      "ledSlot": 87,
+      "matrixIndex": 77,
+      "packetOffset": 265
+    },
+    {
+      "id": 52,
+      "label": "Num5",
+      "bounds": {
+        "left": 527,
+        "top": 112,
+        "right": 547,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 101,
+      "modifier": 0,
+      "ledSlot": 93,
+      "matrixIndex": 78,
+      "packetOffset": 283
+    },
+    {
+      "id": 53,
+      "label": "Num6",
+      "bounds": {
+        "left": 559,
+        "top": 113,
+        "right": 579,
+        "bottom": 135
+      },
+      "type": 2,
+      "virtualKey": 102,
+      "modifier": 0,
+      "ledSlot": 99,
+      "matrixIndex": 79,
+      "packetOffset": 301
+    },
+    {
+      "id": 54,
+      "label": "CapsLock",
+      "bounds": {
+        "left": 13,
+        "top": 112,
+        "right": 59,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 20,
+      "modifier": 0,
+      "ledSlot": 3,
+      "matrixIndex": 63,
+      "packetOffset": 13
+    },
+    {
+      "id": 55,
+      "label": "A",
+      "bounds": {
+        "left": 70,
+        "top": 112,
+        "right": 90,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 65,
+      "modifier": 0,
+      "ledSlot": 9,
+      "matrixIndex": 64,
+      "packetOffset": 31
+    },
+    {
+      "id": 56,
+      "label": "S",
+      "bounds": {
+        "left": 103,
+        "top": 112,
+        "right": 123,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 83,
+      "modifier": 0,
+      "ledSlot": 15,
+      "matrixIndex": 65,
+      "packetOffset": 49
+    },
+    {
+      "id": 57,
+      "label": "D",
+      "bounds": {
+        "left": 135,
+        "top": 112,
+        "right": 155,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 68,
+      "modifier": 0,
+      "ledSlot": 21,
+      "matrixIndex": 66,
+      "packetOffset": 67
+    },
+    {
+      "id": 58,
+      "label": "F",
+      "bounds": {
+        "left": 166,
+        "top": 112,
+        "right": 186,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 70,
+      "modifier": 0,
+      "ledSlot": 27,
+      "matrixIndex": 67,
+      "packetOffset": 85
+    },
+    {
+      "id": 59,
+      "label": "G",
+      "bounds": {
+        "left": 198,
+        "top": 112,
+        "right": 218,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 71,
+      "modifier": 0,
+      "ledSlot": 33,
+      "matrixIndex": 68,
+      "packetOffset": 103
+    },
+    {
+      "id": 60,
+      "label": "H",
+      "bounds": {
+        "left": 230,
+        "top": 112,
+        "right": 250,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 72,
+      "modifier": 0,
+      "ledSlot": 39,
+      "matrixIndex": 69,
+      "packetOffset": 121
+    },
+    {
+      "id": 61,
+      "label": "J",
+      "bounds": {
+        "left": 263,
+        "top": 112,
+        "right": 283,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 74,
+      "modifier": 0,
+      "ledSlot": 45,
+      "matrixIndex": 70,
+      "packetOffset": 139
+    },
+    {
+      "id": 62,
+      "label": "K",
+      "bounds": {
+        "left": 294,
+        "top": 112,
+        "right": 314,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 75,
+      "modifier": 0,
+      "ledSlot": 51,
+      "matrixIndex": 71,
+      "packetOffset": 157
+    },
+    {
+      "id": 63,
+      "label": "L",
+      "bounds": {
+        "left": 326,
+        "top": 112,
+        "right": 346,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 76,
+      "modifier": 0,
+      "ledSlot": 57,
+      "matrixIndex": 72,
+      "packetOffset": 175
+    },
+    {
+      "id": 64,
+      "label": ";",
+      "bounds": {
+        "left": 359,
+        "top": 112,
+        "right": 379,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 186,
+      "modifier": 0,
+      "ledSlot": 63,
+      "matrixIndex": 73,
+      "packetOffset": 193
+    },
+    {
+      "id": 65,
+      "label": "'",
+      "bounds": {
+        "left": 388,
+        "top": 112,
+        "right": 408,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 222,
+      "modifier": 0,
+      "ledSlot": 69,
+      "matrixIndex": 74,
+      "packetOffset": 211
+    },
+    {
+      "id": 66,
+      "label": "Enter",
+      "bounds": {
+        "left": 421,
+        "top": 112,
+        "right": 476,
+        "bottom": 134
+      },
+      "type": 2,
+      "virtualKey": 13,
+      "modifier": 0,
+      "ledSlot": 81,
+      "matrixIndex": 76,
+      "packetOffset": 247
+    },
+    {
+      "id": 67,
+      "label": "Num1",
+      "bounds": {
+        "left": 495,
+        "top": 143,
+        "right": 515,
+        "bottom": 165
+      },
+      "type": 2,
+      "virtualKey": 97,
+      "modifier": 0,
+      "ledSlot": 88,
+      "matrixIndex": 98,
+      "packetOffset": 268
+    },
+    {
+      "id": 68,
+      "label": "Num2",
+      "bounds": {
+        "left": 527,
+        "top": 144,
+        "right": 547,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 98,
+      "modifier": 0,
+      "ledSlot": 94,
+      "matrixIndex": 99,
+      "packetOffset": 286
+    },
+    {
+      "id": 69,
+      "label": "LShift",
+      "bounds": {
+        "left": 13,
+        "top": 144,
+        "right": 75,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 160,
+      "modifier": 0,
+      "ledSlot": 4,
+      "matrixIndex": 84,
+      "packetOffset": 16
+    },
+    {
+      "id": 70,
+      "label": "Z",
+      "bounds": {
+        "left": 86,
+        "top": 143,
+        "right": 106,
+        "bottom": 165
+      },
+      "type": 2,
+      "virtualKey": 90,
+      "modifier": 0,
+      "ledSlot": 10,
+      "matrixIndex": 86,
+      "packetOffset": 34
+    },
+    {
+      "id": 71,
+      "label": "X",
+      "bounds": {
+        "left": 119,
+        "top": 144,
+        "right": 139,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 88,
+      "modifier": 0,
+      "ledSlot": 16,
+      "matrixIndex": 87,
+      "packetOffset": 52
+    },
+    {
+      "id": 72,
+      "label": "C",
+      "bounds": {
+        "left": 151,
+        "top": 144,
+        "right": 171,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 67,
+      "modifier": 0,
+      "ledSlot": 22,
+      "matrixIndex": 88,
+      "packetOffset": 70
+    },
+    {
+      "id": 73,
+      "label": "V",
+      "bounds": {
+        "left": 182,
+        "top": 144,
+        "right": 202,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 86,
+      "modifier": 0,
+      "ledSlot": 28,
+      "matrixIndex": 89,
+      "packetOffset": 88
+    },
+    {
+      "id": 74,
+      "label": "B",
+      "bounds": {
+        "left": 214,
+        "top": 144,
+        "right": 234,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 66,
+      "modifier": 0,
+      "ledSlot": 34,
+      "matrixIndex": 90,
+      "packetOffset": 106
+    },
+    {
+      "id": 75,
+      "label": "N",
+      "bounds": {
+        "left": 246,
+        "top": 144,
+        "right": 266,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 78,
+      "modifier": 0,
+      "ledSlot": 40,
+      "matrixIndex": 91,
+      "packetOffset": 124
+    },
+    {
+      "id": 76,
+      "label": "M",
+      "bounds": {
+        "left": 279,
+        "top": 144,
+        "right": 299,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 77,
+      "modifier": 0,
+      "ledSlot": 46,
+      "matrixIndex": 92,
+      "packetOffset": 142
+    },
+    {
+      "id": 77,
+      "label": ",",
+      "bounds": {
+        "left": 311,
+        "top": 144,
+        "right": 331,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 188,
+      "modifier": 0,
+      "ledSlot": 52,
+      "matrixIndex": 93,
+      "packetOffset": 160
+    },
+    {
+      "id": 78,
+      "label": ".",
+      "bounds": {
+        "left": 343,
+        "top": 144,
+        "right": 363,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 190,
+      "modifier": 0,
+      "ledSlot": 58,
+      "matrixIndex": 94,
+      "packetOffset": 178
+    },
+    {
+      "id": 79,
+      "label": "/",
+      "bounds": {
+        "left": 375,
+        "top": 144,
+        "right": 395,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 191,
+      "modifier": 0,
+      "ledSlot": 64,
+      "matrixIndex": 95,
+      "packetOffset": 196
+    },
+    {
+      "id": 80,
+      "label": "RShift",
+      "bounds": {
+        "left": 407,
+        "top": 144,
+        "right": 451,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 161,
+      "modifier": 0,
+      "ledSlot": 70,
+      "matrixIndex": 96,
+      "packetOffset": 214
+    },
+    {
+      "id": 81,
+      "label": "Up",
+      "bounds": {
+        "left": 462,
+        "top": 144,
+        "right": 482,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 38,
+      "modifier": 0,
+      "ledSlot": 82,
+      "matrixIndex": 97,
+      "packetOffset": 250
+    },
+    {
+      "id": 82,
+      "label": "LCtrl",
+      "bounds": {
+        "left": 13,
+        "top": 176,
+        "right": 41,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 162,
+      "modifier": 0,
+      "ledSlot": 5,
+      "matrixIndex": 105,
+      "packetOffset": 19
+    },
+    {
+      "id": 83,
+      "label": "LWin",
+      "bounds": {
+        "left": 54,
+        "top": 176,
+        "right": 82,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 91,
+      "modifier": 0,
+      "ledSlot": 11,
+      "matrixIndex": 106,
+      "packetOffset": 37
+    },
+    {
+      "id": 84,
+      "label": "LAlt",
+      "bounds": {
+        "left": 94,
+        "top": 176,
+        "right": 122,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 164,
+      "modifier": 0,
+      "ledSlot": 17,
+      "matrixIndex": 107,
+      "packetOffset": 55
+    },
+    {
+      "id": 85,
+      "label": "Space",
+      "bounds": {
+        "left": 133,
+        "top": 176,
+        "right": 323,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 32,
+      "modifier": 0,
+      "ledSlot": 35,
+      "matrixIndex": 110,
+      "packetOffset": 109
+    },
+    {
+      "id": 86,
+      "label": "RAlt",
+      "bounds": {
+        "left": 334,
+        "top": 176,
+        "right": 355,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 165,
+      "modifier": 0,
+      "ledSlot": 53,
+      "matrixIndex": 113,
+      "packetOffset": 163
+    },
+    {
+      "id": 87,
+      "label": "RCtrl",
+      "bounds": {
+        "left": 367,
+        "top": 176,
+        "right": 387,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 163,
+      "modifier": 0,
+      "ledSlot": 59,
+      "matrixIndex": 114,
+      "packetOffset": 181
+    },
+    {
+      "id": 88,
+      "label": "Fn",
+      "bounds": {
+        "left": 399,
+        "top": 176,
+        "right": 419,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 250,
+      "modifier": 0,
+      "ledSlot": 65,
+      "matrixIndex": 115,
+      "packetOffset": 199
+    },
+    {
+      "id": 89,
+      "label": "Left",
+      "bounds": {
+        "left": 431,
+        "top": 176,
+        "right": 451,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 37,
+      "modifier": 0,
+      "ledSlot": 77,
+      "matrixIndex": 117,
+      "packetOffset": 235
+    },
+    {
+      "id": 90,
+      "label": "Down",
+      "bounds": {
+        "left": 463,
+        "top": 176,
+        "right": 483,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 40,
+      "modifier": 0,
+      "ledSlot": 83,
+      "matrixIndex": 118,
+      "packetOffset": 253
+    },
+    {
+      "id": 91,
+      "label": "Right",
+      "bounds": {
+        "left": 495,
+        "top": 176,
+        "right": 515,
+        "bottom": 198
+      },
+      "type": 2,
+      "virtualKey": 39,
+      "modifier": 0,
+      "ledSlot": 89,
+      "matrixIndex": 119,
+      "packetOffset": 271
+    },
+    {
+      "id": 92,
+      "label": "Num3",
+      "bounds": {
+        "left": 559,
+        "top": 144,
+        "right": 579,
+        "bottom": 166
+      },
+      "type": 2,
+      "virtualKey": 99,
+      "modifier": 0,
+      "ledSlot": 100,
+      "matrixIndex": 100,
+      "packetOffset": 304
+    },
+    {
+      "id": 93,
+      "label": "Num .",
+      "bounds": {
+        "left": 559,
+        "top": 175,
+        "right": 579,
+        "bottom": 197
+      },
+      "type": 2,
+      "virtualKey": 110,
+      "modifier": 0,
+      "ledSlot": 101,
+      "matrixIndex": 121,
+      "packetOffset": 307
+    },
+    {
+      "id": 94,
+      "label": "Num0",
+      "bounds": {
+        "left": 526,
+        "top": 175,
+        "right": 546,
+        "bottom": 197
+      },
+      "type": 2,
+      "virtualKey": 96,
+      "modifier": 0,
+      "ledSlot": 95,
+      "matrixIndex": 120,
+      "packetOffset": 289
+    }
+  ]
+}
