@@ -4,7 +4,7 @@ A Windows lighting controller with cream-white keycaps, rotary brightness knobs,
 
 ## Use
 
-Open `dist\RGBABY.exe`. Keep the `backend` folder beside it. The bundled portable OpenRGB engine handles the motherboard, mouse and RAM and starts locally when required. Exit SignalRGB and disable its Windows startup before using RGBABY: competing controllers can overwrite colors and cause flashing. RGBABY detects the running SignalRGB lighting process and refuses lighting updates until it exits; it does not terminate other applications automatically.
+Run `dist\RGBABY.exe`. It stays in the bottom-right Windows system tray until you click its icon (look inside the `^` overflow if needed). A single left click opens the console; right click offers **Open RGBABY** and **Exit RGBABY**. Closing or minimizing the console returns it to the tray, keeping staged edits and wake restoration active. Use **Exit RGBABY** to quit completely. Keep the `backend` folder beside it. The bundled portable OpenRGB engine handles the motherboard, mouse and RAM and starts locally when required. Exit SignalRGB and disable its Windows startup before using RGBABY: competing controllers can overwrite colors and cause flashing. RGBABY detects the running SignalRGB lighting process and refuses lighting updates until it exits; it does not terminate other applications automatically.
 
 - **Color:** enter a hex value, use COLOR, or press a colored keycap.
 - **Brightness knob:** drag vertically, focus and scroll, or use arrow keys. Home/End select 0/100; Page Up/Down change by 10.
@@ -23,7 +23,7 @@ Enable **Start with Windows and restore saved lighting** to register RGBABY for 
 
 The checkbox controls only RGBABY's entry under `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`. Turning it off removes the matching entry. Keep the executable at its registered location; if moving it, turn startup off first, move the whole folder, then enable startup from the new location.
 
-While RGBABY is open, waking from sleep or hibernation restores the motherboard's last successfully saved lighting, including a saved blackout. It waits briefly for USB/engine recovery and retries unavailable devices. Keyboard, mouse and RAM settings and any staged edits are left alone. Closing RGBABY also stops wake restoration.
+Both manual launches and Windows startup stay in the tray without opening the console. Startup lighting restoration runs while hidden. While RGBABY is running, including in the tray, waking from sleep or hibernation restores the motherboard's last successfully saved lighting, including a saved blackout. It waits briefly for USB/engine recovery and retries unavailable devices. Keyboard, mouse and RAM settings and any staged edits are left alone. **Exit RGBABY** stops wake restoration; closing the console to the tray keeps it active.
 
 Starting OpenRGB initializes hardware and can affect an existing effect. RGBABY itself applies staged colors only after Apply, or automatically during the explicitly enabled startup restore. The engine remains running after the console closes. Close other RGB controllers if they overwrite colors.
 
@@ -52,7 +52,9 @@ Run `./test.ps1`, then `./build.ps1` in PowerShell. If an executable is open, us
 
 For a fresh source checkout, download OpenRGB 1.1 Windows 64-bit portable from the official release linked below and extract it so the executable is at `runtime\OpenRGB\OpenRGB Windows 64-bit\OpenRGB.exe` before building. The repository contains no portable backend or PawnIO installer. Hardware-free tests and compilation work without those downloads; lighting control needs the backend.
 
-No-hardware UI checks: `tests\StudioUiTests.ps1 -AssemblyPath <candidate.exe>` and `tests\BalanceUiTests.ps1 -AssemblyPath <candidate.exe>`. Tests cover packet selection/encoding, independent sync and trim, profile validation/atomic replacement, visible window placement, startup quoting, late-device retry, knob input and small-window access.
+No-hardware UI checks: run `tests\TrayUiTests.ps1`, `tests\StudioUiTests.ps1`, `tests\BalanceUiTests.ps1` and `tests\ProfileUiTests.ps1` in separate PowerShell processes, optionally with `-AssemblyPath <candidate.exe>`. Tests cover tray launch/open/hide/exit, packet selection/encoding, independent sync and trim, profile validation/atomic replacement, visible window placement, startup quoting, late-device retry, knob input and small-window access.
+
+For the next chat or developer, [AGENTS.md](AGENTS.md) records the architecture, hardware protocols, startup and wake behavior, theme decisions, settings rules, validation workflow, and how to add other devices.
 
 CLI: `--render <absolute.png>` renders without hardware or saved-profile access. `--diagnose <absolute.json>` reads the connected hardware and an already-running OpenRGB server without applying colors. `--startup` restores saved lighting and therefore writes to hardware. Use a process object's `WaitForExit()` rather than waiting for its entire process tree. Diagnostics write errors beside the output as `.error.txt`.
 

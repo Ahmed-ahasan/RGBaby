@@ -22,6 +22,8 @@ namespace Rgbaby {
         bool profileWritable=true;
         string lastSaveError;
         bool busy,closing,initializing=true,restoring,applying,closeAfterApply;
+        bool trayManaged,exitRequested,changingTrayVisibility;
+        FormWindowState expandedState=FormWindowState.Normal;
         public MainForm(bool previewOnly):this(previewOnly,false){}
         public MainForm(bool previewOnly,bool startupLaunch):this(previewOnly,startupLaunch,SettingsStore.DefaultPath){}
         public MainForm(bool previewOnly,bool startupLaunch,string profilePath){
@@ -65,8 +67,14 @@ namespace Rgbaby {
             syncColors.Click+=delegate{if(!strips[0].Editor.Valid)return;LightingState.ShareColor(strips.Select(s=>s.State),strips[0].State.Color);foreach(var s in strips)s.Editor.SetColor(s.State.Color);AddLog("Colors synced from Keyboard. Brightness and balance kept. Apply & Save All to send.");};
             syncBrightness.Click+=delegate{LightingState.ShareBrightness(strips.Select(s=>s.State),strips[0].State.Brightness);foreach(var s in strips)s.Intensity.Value=s.State.Brightness;AddLog("Brightness synced from Keyboard. Colors and balance kept. Apply & Save All to send.");};
             applyAll.Click+=async delegate{await ApplyDevices(strips,false,true);};off.Click+=async delegate{await ApplyDevices(strips,true,true);};rescan.Click+=async delegate{await Scan();};
-            Shown+=async delegate{RestoreWindow();if(!previewOnly)await InitializeHardware();};
+            Shown+=async delegate{if(!trayManaged){RestoreWindow();if(!previewOnly)await InitializeHardware();}};
+            Resize+=delegate{
+                if(!trayManaged || changingTrayVisibility)return;
+                if(WindowState==FormWindowState.Minimized)HideToTray();
+                else expandedState=WindowState;
+            };
             FormClosing+=delegate(object sender,FormClosingEventArgs e){
+                if(trayManaged && !exitRequested && e.CloseReason==CloseReason.UserClosing){e.Cancel=true;HideToTray();return;}
                 if(applying && e.CloseReason==CloseReason.UserClosing){e.Cancel=true;closeAfterApply=true;status.Text="Finishing the current update before closing…";return;}
                 if(!previewOnly && profileWritable && !SaveProfile() && e.CloseReason==CloseReason.UserClosing)MessageBox.Show(this,"Could not save your settings or window position:\n\n"+lastSaveError+"\n\nThe previous saved profile has been kept.","RGBABY save error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 closing=true;
@@ -74,6 +82,25 @@ namespace Rgbaby {
             initializing=false;
             if(loadError!=null)AddLog(loadError);AddLog("Drag a knob up/down, scroll while focused, or use arrow keys. Apply & Save keeps your look.");RefreshControls();
         }
+        internal void StartInTray(){
+            trayManaged=true;ShowInTaskbar=false;RestoreWindow();
+            // A hidden top-level HWND still receives power broadcasts. Start discovery
+            // from the message loop, without relying on Shown or flashing the window.
+            var handle=Handle;
+            BeginInvoke(new Action(async delegate{if(!previewOnly && !closing)await InitializeHardware();}));
+        }
+        internal void OpenFromTray(){
+            if(closing || IsDisposed)return;
+            changingTrayVisibility=true;
+            try{ShowInTaskbar=true;WindowState=expandedState;Show();Activate();}
+            finally{changingTrayVisibility=false;}
+        }
+        void HideToTray(){
+            if(!previewOnly && profileWritable)SaveProfile();
+            changingTrayVisibility=true;
+            try{Hide();ShowInTaskbar=false;}finally{changingTrayVisibility=false;}
+        }
+        internal void ExitFromTray(){exitRequested=true;Close();}
         void SetTarget(int slot){int index=slot<0?-1:Array.FindIndex(map.keys,k=>k.ledSlot==slot);strips[0].Target.SelectedIndex=index+1;if(slot>=0 && index<0){settings.For(DeviceKind.Keyboard).HasApplied=false;AddLog("Saved keyboard target was invalid; automatic keyboard restore disabled.");}}
         int TargetSlot {get{return strips[0].Target.SelectedIndex<=0?-1:map.keys[strips[0].Target.SelectedIndex-1].ledSlot;}}
         void RestoreWindow(){
@@ -86,7 +113,7 @@ namespace Rgbaby {
         bool SaveProfile(){
             if(previewOnly)return true;
             if(!profileWritable)return false;
-            var b=WindowState==FormWindowState.Normal?Bounds:RestoreBounds;settings.Window=new WindowPlacement{X=b.X,Y=b.Y,Width=b.Width,Height=b.Height,Maximized=WindowState==FormWindowState.Maximized};
+            var b=WindowState==FormWindowState.Normal?Bounds:RestoreBounds;settings.Window=new WindowPlacement{X=b.X,Y=b.Y,Width=b.Width,Height=b.Height,Maximized=(WindowState==FormWindowState.Minimized?expandedState:WindowState)==FormWindowState.Maximized};
             try{SettingsStore.Save(settingsPath,settings);lastSaveError=null;return true;}catch(Exception e){lastSaveError=e.Message;AddLog("Settings NOT saved: "+e.Message);if(!closing)status.Text="Lighting may be applied, but settings could not be saved.";return false;}
         }
         async Task InitializeHardware(){

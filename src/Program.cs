@@ -30,8 +30,8 @@ namespace Rgbaby {
                 if(args.Length!=0 && !startup) throw new ArgumentException("Supported options: --startup, --diagnose output.json or --render preview.png");
                 bool owns;
                 using(var mutex=new Mutex(true,"Local\\RGBABY.KeyboardTest",out owns)) {
-                    if(!owns) {if(!startup)MessageBox.Show("RGBABY is already open.","RGBABY");return 0;}
-                    try {Application.Run(new MainForm(false,startup));} finally {mutex.ReleaseMutex();}
+                    if(!owns) {if(!startup)MessageBox.Show("RGBABY is already running. Click its icon in the system tray to open it.","RGBABY");return 0;}
+                    try {using(var context=new TrayApplicationContext(new MainForm(false,startup)))Application.Run(context);} finally {mutex.ReleaseMutex();}
                 }
                 return 0;
             } catch(Exception ex) {
